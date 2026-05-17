@@ -49,7 +49,7 @@
   html {
     scroll-behavior: smooth;
     color-scheme: dark;
-    font-size: 16px;
+    font-size: 18px;
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
@@ -126,7 +126,7 @@
   .phone-wrap { flex-shrink:0; display:flex; justify-content:center; animation:fadeUp .5s .35s ease both; }
 
   .phone-shell {
-    width:240px;
+    width:280px;
     background:#0a0a0a;
     border:3px solid rgba(255,255,255,.13);
     border-radius:38px;
@@ -139,25 +139,25 @@
 
   .phone-screen { background:#ECE5DD; border-radius:18px; overflow:hidden; }
 
-  .wa-bar { background:#075E54; padding:9px 11px; display:flex; align-items:center; gap:8px; }
-  .wa-av { width:32px;height:32px; border-radius:50%; background:var(--green); display:flex;align-items:center;justify-content:center; font-size:.75rem; font-weight:900; color:#fff; font-family:'Barlow Condensed',sans-serif; flex-shrink:0; }
-  .wa-info-name { font-size:.76rem; font-weight:700; color:#fff; line-height:1.2; }
-  .wa-info-status { font-size:.62rem; color:rgba(255,255,255,.7); }
+  .wa-bar { background:#075E54; padding:10px 12px; display:flex; align-items:center; gap:8px; }
+  .wa-av { width:38px;height:38px; border-radius:50%; background:var(--green); display:flex;align-items:center;justify-content:center; font-size:.85rem; font-weight:900; color:#fff; font-family:'Barlow Condensed',sans-serif; flex-shrink:0; }
+  .wa-info-name { font-size:.85rem; font-weight:700; color:#fff; line-height:1.2; }
+  .wa-info-status { font-size:.7rem; color:rgba(255,255,255,.7); }
 
-  .wa-msgs { background:#ECE5DD; padding:8px 7px; height:360px; overflow:hidden; display:flex; flex-direction:column; gap:5px; }
+  .wa-msgs { background:#ECE5DD; padding:8px 7px; height:480px; overflow:hidden; display:flex; flex-direction:column; gap:5px; }
 
   .wa-bubble {
-    max-width:88%; padding:5px 8px; border-radius:8px;
-    font-size:.65rem; line-height:1.35; position:relative;
+    max-width:88%; padding:7px 10px; border-radius:8px; word-wrap:break-word; overflow-wrap:break-word; word-break:break-word;
+    font-size:.8rem; line-height:1.45; position:relative;
     opacity:0; transform:translateY(6px);
     box-shadow:0 1px 2px rgba(0,0,0,.12);
   }
   .wa-bubble.in  { background:#fff; align-self:flex-start; border-radius:0 8px 8px 8px; color:#111; }
   .wa-bubble.out { background:#DCF8C6; align-self:flex-end; border-radius:8px 8px 0 8px; color:#111; }
-  .wa-t { font-size:.58rem; color:rgba(0,0,0,.38); text-align:right; margin-top:2px; }
+  .wa-t { font-size:.68rem; color:rgba(0,0,0,.38); text-align:right; margin-top:2px; }
   .wa-t .tick { color:#4FC3F7; }
 
-  .missed-tag { align-self:center; background:#fff; border-radius:16px; padding:4px 10px; font-size:.64rem; color:#e53935; display:flex; align-items:center; gap:4px; opacity:0; transform:translateY(6px); box-shadow:0 1px 2px rgba(0,0,0,.12); }
+  .missed-tag { align-self:center; background:#fff; border-radius:16px; padding:5px 12px; font-size:.72rem; color:#e53935; display:flex; align-items:center; gap:4px; opacity:0; transform:translateY(6px); box-shadow:0 1px 2px rgba(0,0,0,.12); }
 
   .m1 { animation:popIn .35s 0.8s  ease forwards; }
   .m2 { animation:popIn .35s 2.5s ease forwards; }
@@ -427,23 +427,10 @@
           </div>
           <div class="wa-msgs">
             <div class="missed-tag m1">📵 Missed call from you</div>
-            <div class="wa-bubble out m2">
-              Hi! You called Smith Lead Systems 👋 Sorry we missed you — on a job! <strong>Can we help? Reply below ⬇</strong>
-              <div class="wa-t">09:14 <span class="tick">✓✓</span></div>
-            </div>
-            <div class="wa-bubble in m3">
-              Need a consumer unit upgrade — how soon can you quote?
-              <div class="wa-t">09:15</div>
-            </div>
-            <div class="wa-bubble out m4">
-              Great — we can get you in this week! 🔧<br>
-              <strong>👉 Book here:</strong> smithleadsystems.co.uk/book
-              <div class="wa-t">09:15 <span class="tick">✓✓</span></div>
-            </div>
-            <div class="wa-bubble in m5">
-              Amazing, booked for Thursday 10am 👍
-              <div class="wa-t">09:16</div>
-            </div>
+            <div class="wa-bubble out m2">Hi! Missed your call — we're on a job 👋<br><strong>Can we help? Reply below ⬇</strong><div class="wa-t">09:14 <span class="tick">✓✓</span></div></div>
+            <div class="wa-bubble in m3">Need a consumer unit upgrade please<div class="wa-t">09:15</div></div>
+            <div class="wa-bubble out m4">We can get you in this week! 🔧<br><strong>👉</strong> smithleadsystems.co.uk/book<div class="wa-t">09:15 <span class="tick">✓✓</span></div></div>
+            <div class="wa-bubble in m5">Booked for Thursday 👍<div class="wa-t">09:16</div></div>
           </div>
         </div>
       </div>
