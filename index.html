@@ -87,7 +87,7 @@
   .nav-cta:hover { background:var(--green-dark); transform:translateY(-1px); }
 
   /* ── TICKER ── */
-  .ticker-wrap { background:var(--green); padding:.5rem 0; overflow:hidden; white-space:nowrap; margin-top:58px; }
+  .ticker-wrap { background:var(--green); padding:.5rem 0; overflow:hidden; white-space:nowrap; margin-top:0; }
   .ticker { display:inline-block; animation:ticker 32s linear infinite; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.82rem; letter-spacing:.1em; text-transform:uppercase; color:#fff; }
   @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 
@@ -391,6 +391,12 @@
   <div class="nav-logo">Smith <span>Lead</span> Systems</div>
   <a href="https://links.smithleadsystems.co.uk/widget/form/z9EoCRHUQokKGmByQKvI" target="_blank" class="nav-cta">Free Demo</a>
 </nav>
+
+<!-- TOP BRANDING BAR - always visible inside GHL -->
+<div style="background:#0D1B2E;padding:.8rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(58,167,109,0.2);width:100%;box-sizing:border-box;">
+  <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.2rem;letter-spacing:.06em;text-transform:uppercase;color:#fff;">SMITH <span style="color:#3AA76D;">LEAD</span> SYSTEMS</div>
+  <a href="https://links.smithleadsystems.co.uk/widget/form/z9EoCRHUQokKGmByQKvI" target="_blank" style="background:#3AA76D;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase;padding:.55rem 1.3rem;text-decoration:none;display:inline-block;">FREE DEMO</a>
+</div>
 
 <!-- TICKER -->
 <div class="ticker-wrap">
