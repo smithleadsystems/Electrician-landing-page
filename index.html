@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   /* ── GHL OVERRIDES ── */
-  html, body,
   .container, .row, .col,
   #page-container, #content-area,
   .funnelish, .page-wrapper,
@@ -773,6 +772,14 @@
       if (!open) item.classList.add('open');
     });
   });
+
+  // Hide nav when inside GHL iframe
+  if (window.self !== window.top) {
+    const nav = document.querySelector('nav');
+    const ticker = document.querySelector('.ticker-wrap');
+    if (nav) nav.style.display = 'none';
+    if (ticker) ticker.style.marginTop = '0';
+  }
 
   // Loop all phone animations
   function restartGroup(selectors) {
