@@ -773,14 +773,6 @@
     });
   });
 
-  // Hide nav when inside GHL iframe
-  if (window.self !== window.top) {
-    const nav = document.querySelector('nav');
-    const ticker = document.querySelector('.ticker-wrap');
-    if (nav) nav.style.display = 'none';
-    if (ticker) ticker.style.marginTop = '0';
-  }
-
   // Loop all phone animations
   function restartGroup(selectors) {
     selectors.forEach(cls => {
