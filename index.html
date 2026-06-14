@@ -21,12 +21,12 @@
     margin-right: 0 !important;
     background: transparent !important;
   }
-
+ 
   html, body {
     background: #0D1B2E !important;
     color: #FFFFFF !important;
   }
-
+ 
   * {
     color: inherit;
   }
@@ -43,7 +43,7 @@
     --off:        #D4E4F4;
     --danger:     #FF4444;
   }
-
+ 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html {
     scroll-behavior: smooth;
@@ -52,7 +52,7 @@
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
-
+ 
   body {
     font-family: 'Barlow', sans-serif;
     background: var(--navy) !important;
@@ -64,14 +64,14 @@
     margin: 0 !important;
     padding: 0 !important;
   }
-
+ 
   .hero, .section, .alt, .stats-bar, .ticker-wrap, nav, footer,
   .pdf-strip, .cta-sec, .testimonials {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
-
+ 
   /* ── NAV ── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 200;
@@ -85,45 +85,45 @@
   .nav-logo span { color:var(--green); }
   .nav-cta { background:var(--green); color:#fff; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.88rem; letter-spacing:.08em; text-transform:uppercase; padding:.55rem 1.3rem; text-decoration:none; transition:background .2s,transform .15s; display:inline-block; }
   .nav-cta:hover { background:var(--green-dark); transform:translateY(-1px); }
-
+ 
   /* ── TICKER ── */
   .ticker-wrap { background:var(--green); padding:.5rem 0; overflow:hidden; white-space:nowrap; margin-top:0; }
   .ticker { display:inline-block; animation:ticker 32s linear infinite; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.82rem; letter-spacing:.1em; text-transform:uppercase; color:#fff; }
   @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-
+ 
   /* ── HERO ── */
   .hero { padding:5rem 2rem 5rem; position:relative; overflow:hidden; }
   .hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 55% 60% at 90% 50%,rgba(58,167,109,.09) 0%,transparent 65%),radial-gradient(ellipse 40% 50% at 5% 85%,rgba(58,167,109,.05) 0%,transparent 60%); pointer-events:none; }
-
+ 
   .hero-layout { display:flex; align-items:center; gap:3rem; flex-wrap:wrap; max-width:1100px; margin:0 auto; position:relative; z-index:1; }
   .hero-text { flex:1; min-width:280px; }
-
+ 
   .eyebrow { display:inline-flex; align-items:center; gap:.5rem; background:rgba(58,167,109,.12); border:1px solid rgba(58,167,109,.35); color:var(--green-lt); font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; padding:.38rem .9rem; margin-bottom:1.5rem; animation:fadeUp .5s ease both; }
-
+ 
   h1 { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:clamp(2.6rem,7vw,5.4rem); line-height:.95; text-transform:uppercase; color:var(--white); animation:fadeUp .5s .1s ease both; }
   h1 .accent { color:var(--green); }
   h1 .outline { -webkit-text-stroke:2px rgba(255,255,255,.22); color:transparent; }
-
+ 
   .hero-sub { margin-top:1.6rem; font-size:clamp(.95rem,2vw,1.12rem); color:var(--off); max-width:520px; line-height:1.72; animation:fadeUp .5s .2s ease both; }
   .hero-sub strong { color:#fff; }
-
+ 
   .hero-actions { margin-top:2.2rem; display:flex; flex-wrap:wrap; gap:1rem; align-items:center; animation:fadeUp .5s .3s ease both; }
-
+ 
   .btn-primary { background:var(--green); color:#fff; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1.05rem; letter-spacing:.06em; text-transform:uppercase; padding:.95rem 2rem; border:none; cursor:pointer; text-decoration:none; display:inline-block; transition:all .2s; }
   .btn-primary:hover { background:var(--green-dark); transform:translateY(-2px); box-shadow:0 8px 24px rgba(58,167,109,.28); }
-
+ 
   .btn-ghost { color:var(--off); font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:.96rem; letter-spacing:.05em; text-transform:uppercase; text-decoration:none; display:inline-flex; align-items:center; gap:.35rem; transition:color .2s; }
   .btn-ghost:hover { color:#fff; }
   .btn-ghost::after { content:'→'; transition:transform .2s; }
   .btn-ghost:hover::after { transform:translateX(4px); }
-
+ 
   .trust-row { margin-top:2.5rem; display:flex; flex-wrap:wrap; gap:1.3rem; animation:fadeUp .5s .4s ease both; }
   .trust-item { display:flex; align-items:center; gap:.45rem; font-size:.86rem; color:var(--off); }
   .trust-icon { width:26px;height:26px; background:rgba(58,167,109,.14); border:1px solid rgba(58,167,109,.3); display:flex;align-items:center;justify-content:center; font-size:.75rem; flex-shrink:0; }
-
+ 
   /* ── PHONE MOCKUP ── */
   .phone-wrap { flex-shrink:0; display:flex; justify-content:center; animation:fadeUp .5s .35s ease both; }
-
+ 
   .phone-shell {
     width:280px;
     background:#0a0a0a;
@@ -133,39 +133,43 @@
     box-shadow:0 32px 80px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.05), inset 0 0 0 1px rgba(255,255,255,.04);
     position:relative;
   }
-
+ 
   .phone-notch { width:72px; height:18px; background:#0a0a0a; border-radius:0 0 12px 12px; margin:0 auto 10px; border:2px solid rgba(255,255,255,.07); border-top:none; }
-
-  .phone-screen { background:#ECE5DD; border-radius:18px; overflow:hidden; }
-
-  .wa-bar { background:#075E54; padding:10px 12px; display:flex; align-items:center; gap:8px; }
-  .wa-av { width:38px;height:38px; border-radius:50%; background:var(--green); display:flex;align-items:center;justify-content:center; font-size:.85rem; font-weight:900; color:#fff; font-family:'Barlow Condensed',sans-serif; flex-shrink:0; }
-  .wa-info-name { font-size:.85rem; font-weight:700; color:#fff; line-height:1.2; }
-  .wa-info-status { font-size:.7rem; color:rgba(255,255,255,.7); }
-
-  .wa-msgs { background:#ECE5DD; padding:8px 7px; height:480px; overflow:hidden; display:flex; flex-direction:column; gap:5px; }
-
+ 
+  .phone-screen { background:#fff; border-radius:18px; overflow:hidden; }
+ 
+  /* SMS / Messages-style header */
+  .wa-bar { background:#f7f7f8; padding:9px 12px 8px; display:flex; flex-direction:column; align-items:center; gap:3px; border-bottom:1px solid rgba(0,0,0,.08); }
+  .wa-av { width:40px;height:40px; border-radius:50%; background:var(--green); display:flex;align-items:center;justify-content:center; font-size:.8rem; font-weight:900; color:#fff; font-family:'Barlow Condensed',sans-serif; flex-shrink:0; }
+  .wa-info-name { font-size:.82rem; font-weight:700; color:#111; line-height:1.2; text-align:center; }
+  .wa-info-status { font-size:.64rem; color:#8a8a8e; text-align:center; }
+ 
+  .wa-msgs { background:#fff; padding:10px 8px; height:480px; overflow:hidden; display:flex; flex-direction:column; gap:6px; }
+ 
+  /* SMS bubbles: grey received, brand-green sent */
   .wa-bubble {
-    max-width:88%; padding:7px 10px; border-radius:8px; word-wrap:break-word; overflow-wrap:break-word; word-break:break-word;
-    font-size:.8rem; line-height:1.45; position:relative;
+    max-width:80%; padding:8px 11px; border-radius:17px; word-wrap:break-word; overflow-wrap:break-word; word-break:break-word;
+    font-size:.8rem; line-height:1.4; position:relative;
     opacity:0; transform:translateY(6px);
-    box-shadow:0 1px 2px rgba(0,0,0,.12);
   }
-  .wa-bubble.in  { background:#fff; align-self:flex-start; border-radius:0 8px 8px 8px; color:#111; }
-  .wa-bubble.out { background:#DCF8C6; align-self:flex-end; border-radius:8px 8px 0 8px; color:#111; }
-  .wa-t { font-size:.68rem; color:rgba(0,0,0,.38); text-align:right; margin-top:2px; }
-  .wa-t .tick { color:#4FC3F7; }
-
-  .missed-tag { align-self:center; background:#fff; border-radius:16px; padding:5px 12px; font-size:.72rem; color:#e53935; display:flex; align-items:center; gap:4px; opacity:0; transform:translateY(6px); box-shadow:0 1px 2px rgba(0,0,0,.12); }
-
+  .wa-bubble.in  { background:#e9e9eb; align-self:flex-start; border-bottom-left-radius:5px; color:#111; }
+  .wa-bubble.out { background:var(--green); align-self:flex-end; border-bottom-right-radius:5px; color:#fff; }
+  .wa-t { font-size:.64rem; color:rgba(0,0,0,.38); text-align:right; margin-top:3px; }
+  .wa-bubble.out .wa-t { color:rgba(255,255,255,.72); }
+  .wa-t .tick { display:none; }
+  .sms-link { color:#fff; text-decoration:underline; font-weight:600; word-break:break-all; }
+  .wa-bubble.in .sms-link { color:#0a84ff; }
+ 
+  .missed-tag { align-self:center; background:#f1f1f3; border-radius:14px; padding:4px 12px; font-size:.66rem; color:#c0392b; font-weight:600; display:flex; align-items:center; gap:4px; opacity:0; transform:translateY(6px); }
+ 
   .m1 { animation:popIn .35s 0.8s  ease forwards; }
   .m2 { animation:popIn .35s 2.5s ease forwards; }
   .m3 { animation:popIn .35s 4.5s ease forwards; }
   .m4 { animation:popIn .35s 6.5s ease forwards; }
   .m5 { animation:popIn .35s 9.0s ease forwards; }
-
+ 
   @keyframes popIn { to { opacity:1; transform:translateY(0); } }
-
+ 
   /* ── PHOTO STRIP ── */
   .photo-placeholder { background: var(--navy3); }
   .photo-ph-inner { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:3.5rem; opacity:0.18; }
@@ -176,7 +180,7 @@
   .photo-overlay { position:absolute;bottom:0;left:0;right:0;padding:1.1rem 1.3rem;background:linear-gradient(transparent,rgba(13,27,46,.93)); }
   .photo-label { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.95rem; text-transform:uppercase; color:#fff; letter-spacing:.04em; }
   .photo-sub { font-size:.78rem; color:var(--off); margin-top:.1rem; }
-
+ 
   /* ── SHARED ── */
   .section { padding:5rem 2rem; }
   .alt { background:var(--navy2); }
@@ -186,7 +190,7 @@
   h2 .accent { color:var(--green); }
   .sec-sub { margin-top:.9rem; color:var(--off); max-width:520px; line-height:1.7; font-size:.97rem; }
   hr.div { border:none; height:1px; background:linear-gradient(90deg,transparent,rgba(58,167,109,.2),transparent); margin:0 2rem; }
-
+ 
   /* PAIN */
   .pain-grid { margin-top:2.6rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.5px; background:rgba(255,255,255,.04); }
   .pain-card { background:var(--navy2); padding:1.8rem; transition:background .25s; position:relative; overflow:hidden; }
@@ -197,7 +201,7 @@
   .pain-card h3 { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1.15rem; text-transform:uppercase; color:var(--white); margin-bottom:.45rem; }
   .pain-card p { font-size:.91rem; color:var(--off); line-height:1.65; }
   .pain-loss { margin-top:.85rem; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.88rem; color:var(--danger); text-transform:uppercase; letter-spacing:.04em; }
-
+ 
   /* STEPS */
   .steps { margin-top:2.8rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem; }
   .step { position:relative; padding-top:.8rem; }
@@ -206,7 +210,7 @@
   .step-icon { width:44px;height:44px; background:rgba(58,167,109,.12); border:1px solid rgba(58,167,109,.28); display:flex;align-items:center;justify-content:center; font-size:1.2rem; margin-bottom:.85rem; }
   .step h3 { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1.1rem; text-transform:uppercase; color:var(--white); margin-bottom:.4rem; }
   .step p { font-size:.88rem; color:var(--off); line-height:1.65; }
-
+ 
   /* FEATURES */
   .feat-grid { margin-top:2.4rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:1px; background:rgba(255,255,255,.04); }
   .feat { background:var(--navy); padding:1.6rem 1.7rem; display:flex; gap:1rem; align-items:flex-start; transition:background .25s; }
@@ -214,14 +218,14 @@
   .feat-icon { font-size:1.4rem; flex-shrink:0; width:40px;height:40px; display:flex;align-items:center;justify-content:center; background:rgba(58,167,109,.1); border:1px solid rgba(58,167,109,.2); }
   .feat h4 { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.98rem; text-transform:uppercase; color:var(--white); margin-bottom:.3rem; }
   .feat p { font-size:.85rem; color:var(--off); line-height:1.6; }
-
+ 
   /* STATS */
   .stats-bar { background:var(--green); padding:3.5rem 2rem; position:relative; overflow:hidden; }
   .stats-bar::before { content:'⚡'; position:absolute; right:0;top:50%;transform:translateY(-50%); font-size:14rem; opacity:.06; pointer-events:none; }
   .stats-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:2rem; text-align:center; position:relative; z-index:1; }
   .stat-n { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:clamp(2.4rem,5vw,3.8rem); color:#fff; line-height:1; letter-spacing:-.02em; }
   .stat-l { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.82rem; text-transform:uppercase; letter-spacing:.08em; color:rgba(255,255,255,.75); margin-top:.3rem; }
-
+ 
   /* TESTIMONIALS */
   .testi-grid { margin-top:2.6rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:1.3rem; }
   .testi { background:var(--navy3); border:1px solid rgba(58,167,109,.14); padding:1.7rem; position:relative; }
@@ -232,8 +236,8 @@
   .av { width:38px;height:38px; border-radius:50%; background:rgba(58,167,109,.15); border:2px solid rgba(58,167,109,.3); display:flex;align-items:center;justify-content:center; font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:.9rem; color:var(--green-lt); flex-shrink:0; }
   .au-name { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.92rem; text-transform:uppercase; color:var(--white); }
   .au-loc { font-size:.78rem; color:var(--muted); }
-
-
+ 
+ 
   /* PRICING */
   .price-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:1.5px; background:rgba(255,255,255,.04); max-width:980px; margin:2.6rem auto 0; }
   .plan { background:var(--navy2); padding:2.2rem 1.7rem; position:relative; }
@@ -251,13 +255,38 @@
   .btn-plan:hover { border-color:var(--green); color:var(--green-lt); }
   .plan.hot .btn-plan { background:var(--green); border-color:var(--green); color:#fff; }
   .plan.hot .btn-plan:hover { background:var(--green-dark); border-color:var(--green-dark); }
-
+  /* SINGLE-PACKAGE PRICING */
+  .price-single { max-width:430px; margin:2.6rem auto 0; }
+  .addons { max-width:720px; margin:2rem auto 0; text-align:center; }
+  .multivan-note { font-size:.95rem; color:var(--off); margin-bottom:1.7rem; }
+  .multivan-note b { color:var(--green-lt); }
+  .addons-title { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+  .addon-chips { display:flex; gap:.6rem; flex-wrap:wrap; justify-content:center; margin-top:.95rem; }
+  .addon-chip { border:1px solid rgba(255,255,255,.16); border-radius:999px; padding:.5rem 1.05rem; font-size:.86rem; color:var(--off); font-family:'Barlow Condensed',sans-serif; font-weight:600; letter-spacing:.03em; }
+  .addon-chip b { color:var(--green-lt); margin-right:.35rem; }
+  /* GET STARTED — two paths */
+  .start-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.3rem; max-width:840px; margin:2.4rem auto 0; text-align:left; }
+  .start-card { background:var(--navy2); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:2rem 1.7rem; display:flex; flex-direction:column; }
+  .start-card-hot { background:var(--navy3); border-color:rgba(58,167,109,.4); }
+  .start-ic { font-size:1.8rem; margin-bottom:.7rem; }
+  .start-card h3 { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.5rem; text-transform:uppercase; letter-spacing:.01em; color:var(--white); margin-bottom:.5rem; line-height:1.05; }
+  .start-card p { color:var(--muted); font-size:.95rem; line-height:1.55; margin-bottom:1.3rem; flex:1; }
+  .start-price { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:2.5rem; color:var(--white); line-height:1; margin-bottom:1.1rem; }
+  .start-price span { font-size:.95rem; font-weight:500; color:var(--muted); }
+  .start-btn { display:block; text-align:center; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.98rem; letter-spacing:.06em; text-transform:uppercase; padding:.9rem; border-radius:8px; text-decoration:none; transition:all .2s; cursor:pointer; }
+  .start-btn.solid { background:var(--green); color:#fff; border:1px solid var(--green); }
+  .start-btn.solid:hover { background:var(--green-dark); border-color:var(--green-dark); transform:translateY(-2px); }
+  .start-btn.outline { background:transparent; color:var(--white); border:1px solid rgba(255,255,255,.22); }
+  .start-btn.outline:hover { border-color:var(--green); color:var(--green-lt); }
+  .start-note { text-align:center; color:var(--muted); font-size:.85rem; margin-top:1.5rem; }
+  @media (max-width:640px){ .start-grid { grid-template-columns:1fr; } }
+ 
   /* GUARANTEE */
   .g-box { max-width:640px; margin:0 auto; border:1px solid rgba(58,167,109,.22); padding:2.6rem 2rem; text-align:center; }
   .g-box .gi { font-size:2.5rem; margin-bottom:.9rem; display:block; }
   .g-box h3 { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:1.8rem; text-transform:uppercase; color:var(--green-lt); margin-bottom:.85rem; }
   .g-box p { font-size:.96rem; color:var(--off); line-height:1.7; max-width:460px; margin:0 auto; }
-
+ 
   /* FAQ */
   .faq-list { margin-top:2.6rem; max-width:740px; }
   .faq-item { border-bottom:1px solid rgba(255,255,255,.07); }
@@ -267,7 +296,7 @@
   .faq-item.open .faq-tog { background:var(--green); color:#fff; transform:rotate(45deg); }
   .faq-a { display:none; padding-bottom:1.1rem; font-size:.91rem; color:var(--off); line-height:1.7; }
   .faq-item.open .faq-a { display:block; }
-
+ 
   /* FINAL CTA */
   .cta-sec { padding:5.5rem 2rem; text-align:center; background:var(--navy2); position:relative; overflow:hidden; }
   .cta-sec::before { content:''; position:absolute;inset:0; background:radial-gradient(ellipse 70% 55% at 50% 50%,rgba(58,167,109,.07) 0%,transparent 70%); pointer-events:none; }
@@ -275,7 +304,7 @@
   .cta-sec h2 { font-size:clamp(2rem,6vw,4.5rem); margin-bottom:1.2rem; }
   .cta-sub { font-size:1.02rem; color:var(--off); max-width:460px; margin:0 auto 2.2rem; line-height:1.68; }
   .cta-note { margin-top:1rem; font-size:.81rem; color:var(--muted); }
-
+ 
   /* FOOTER */
   footer { background:var(--navy); border-top:1px solid rgba(255,255,255,.06); padding:1.7rem 2rem; display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem; }
   .fl { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:1rem; text-transform:uppercase; letter-spacing:.05em; color:var(--white); }
@@ -284,38 +313,38 @@
   .flinks { display:flex;gap:1.3rem;flex-wrap:wrap; }
   footer a { color:var(--muted); font-size:.78rem; text-decoration:none; transition:color .2s; }
   footer a:hover { color:var(--green-lt); }
-
+ 
   /* REVEAL + ANIMATE */
   /* MOCKUP GRID */
   .mockup-grid { margin-top:2.8rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:2rem; justify-items:center; }
   .mockup-card { display:flex; flex-direction:column; align-items:center; gap:.9rem; width:100%; }
   .mockup-label { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:.92rem; text-transform:uppercase; letter-spacing:.06em; color:var(--white); align-self:flex-start; }
   .mockup-caption { font-size:.78rem; color:var(--muted); text-align:center; font-style:italic; }
-
+ 
   /* PER-PHONE ANIMATION CLASSES */
   .p1a,.p1b,.p1c,.p1d,.p1e,
   .p2a,.p2b,.p2c,
   .p3a,.p3b,.p3c,
   .p4a,.p4b,.p4c { opacity:0; transform:translateY(6px); }
-
+ 
   .p1a { animation:popIn .3s 0.5s  ease forwards; }
   .p1b { animation:popIn .3s 1.8s  ease forwards; }
   .p1c { animation:popIn .3s 3.2s  ease forwards; }
   .p1d { animation:popIn .3s 4.6s  ease forwards; }
   .p1e { animation:popIn .3s 6.0s  ease forwards; }
-
+ 
   .p2a { animation:popIn .3s 0.5s  ease forwards; }
   .p2b { animation:popIn .3s 2.5s  ease forwards; }
   .p2c { animation:popIn .3s 4.0s  ease forwards; }
-
+ 
   .p3a { animation:popIn .3s 0.5s  ease forwards; }
   .p3b { animation:popIn .3s 2.5s  ease forwards; }
   .p3c { animation:popIn .3s 4.0s  ease forwards; }
-
+ 
   .p4a { animation:popIn .3s 0.5s  ease forwards; }
   .p4b { animation:popIn .3s 2.5s  ease forwards; }
   .p4c { animation:popIn .3s 4.0s  ease forwards; }
-
+ 
   /* MINI PHONE SHELL */
   .mini-phone {
     width:100%;
@@ -326,22 +355,22 @@
     padding:8px 6px 12px;
     box-shadow:0 16px 40px rgba(0,0,0,.5);
   }
-
+ 
   .mini-bar { background:#075E54; border-radius:12px 12px 0 0; padding:7px 9px; display:flex; align-items:center; gap:6px; }
   .mini-av { width:26px;height:26px; border-radius:50%; background:var(--green); display:flex;align-items:center;justify-content:center; font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:.6rem; color:#fff; flex-shrink:0; }
   .mini-name { font-size:.65rem; font-weight:700; color:#fff; line-height:1.2; }
   .mini-status { font-size:.55rem; color:rgba(255,255,255,.7); }
-
+ 
   .mini-msgs { background:#ECE5DD; padding:7px 6px; border-radius:0 0 12px 12px; display:flex; flex-direction:column; gap:5px; min-height:160px; }
-
+ 
   .mini-tag { align-self:center; background:#fff; border-radius:12px; padding:3px 8px; font-size:.58rem; color:#e53935; display:flex; align-items:center; gap:3px; box-shadow:0 1px 2px rgba(0,0,0,.1); }
-
+ 
   .mini-bubble { max-width:90%; padding:5px 7px; border-radius:6px; font-size:.62rem; line-height:1.4; box-shadow:0 1px 2px rgba(0,0,0,.1); color:#111; }
   .mini-bubble.out { background:#DCF8C6; align-self:flex-end; border-radius:6px 6px 0 6px; }
   .mini-bubble.in  { background:#fff; align-self:flex-start; border-radius:0 6px 6px 6px; }
   .mini-t { font-size:.52rem; color:rgba(0,0,0,.38); text-align:right; margin-top:2px; }
   .mini-tick { color:#4FC3F7; }
-
+ 
   /* SMS STYLE */
   .mini-sms-header { background:#f2f2f7; border-radius:12px 12px 0 0; padding:6px 9px; font-size:.65rem; font-weight:700; color:#111; text-align:center; }
   .sms-bubble { background:#e9e9eb; border-radius:10px; padding:6px 8px; font-size:.6rem; line-height:1.4; color:#111; margin-bottom:4px; }
@@ -349,7 +378,7 @@
   .sms-sender { font-weight:700; font-size:.6rem; color:var(--green-dark); margin-bottom:3px; }
   .sms-t { font-size:.52rem; color:rgba(0,0,0,.35); margin-top:3px; }
   .sms-bubble.sms-reply .sms-t { color:rgba(255,255,255,.7); }
-
+ 
   /* OUTCOMES GRID */
   .outcomes-grid { margin-top:2.6rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.5rem; }
   .outcome { background:var(--navy2); border:1px solid rgba(58,167,109,.1); padding:1.8rem; transition:border-color .25s,background .25s; }
@@ -357,7 +386,7 @@
   .outcome-icon { font-size:1.8rem; margin-bottom:.8rem; display:block; }
   .outcome h3 { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1.1rem; text-transform:uppercase; color:var(--white); margin-bottom:.45rem; }
   .outcome p { font-size:.88rem; color:var(--off); line-height:1.65; }
-
+ 
   /* PDF LEAD MAGNET */
   .pdf-strip { background:var(--navy3); border-top:1px solid rgba(58,167,109,.2); border-bottom:1px solid rgba(58,167,109,.2); padding:2.5rem 2rem; }
   .pdf-box { display:flex; align-items:center; gap:2rem; flex-wrap:wrap; max-width:1100px; margin:0 auto; }
@@ -367,11 +396,11 @@
   .pdf-title { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:1.3rem; text-transform:uppercase; color:var(--white); line-height:1.1; margin-bottom:.5rem; }
   .pdf-sub { font-size:.85rem; color:var(--off); line-height:1.6; }
   @media(max-width:640px) { .pdf-box { flex-direction:column; } }
-
+ 
   @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
   .reveal { opacity:0; transform:translateY(20px); transition:opacity .6s ease,transform .6s ease; }
   .reveal.visible { opacity:1; transform:none; }
-
+ 
   @media(max-width:760px) {
     .hero-layout { flex-direction:column-reverse; gap:2.5rem; }
     .phone-shell { width:210px; }
@@ -385,31 +414,31 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Smith <span>Lead</span> Systems</div>
   <a href="https://links.smithleadsystems.co.uk/widget/form/z9EoCRHUQokKGmByQKvI" target="_blank" class="nav-cta">Free Demo</a>
 </nav>
-
+ 
 <!-- TOP BRANDING BAR - always visible inside GHL -->
 <div style="background:#0D1B2E;padding:.8rem 2rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(58,167,109,0.2);width:100%;box-sizing:border-box;">
   <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.2rem;letter-spacing:.06em;text-transform:uppercase;color:#fff;">SMITH <span style="color:#3AA76D;">LEAD</span> SYSTEMS</div>
   <a href="https://links.smithleadsystems.co.uk/widget/form/z9EoCRHUQokKGmByQKvI" target="_blank" style="background:#3AA76D;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase;padding:.55rem 1.3rem;text-decoration:none;display:inline-block;">FREE DEMO</a>
 </div>
-
+ 
 <!-- TICKER -->
 <div class="ticker-wrap">
-  <div class="ticker">⚡ Built For UK Electricians &nbsp;•&nbsp; Stop Losing Jobs To Slow Replies &nbsp;•&nbsp; Automated Lead Follow-Up &nbsp;•&nbsp; WhatsApp &amp; SMS Automation &nbsp;•&nbsp; No Contracts &nbsp;•&nbsp; 30-Day Money Back Guarantee &nbsp;•&nbsp; ⚡ Built For UK Electricians &nbsp;•&nbsp; Stop Losing Jobs To Slow Replies &nbsp;•&nbsp; Automated Lead Follow-Up &nbsp;•&nbsp; WhatsApp &amp; SMS Automation &nbsp;•&nbsp; No Contracts &nbsp;•&nbsp; 30-Day Money Back Guarantee &nbsp;•&nbsp;</div>
+  <div class="ticker">⚡ Built For UK Electricians &nbsp;•&nbsp; Stop Losing Jobs To Slow Replies &nbsp;•&nbsp; Automated Lead Follow-Up &nbsp;•&nbsp; SMS Automation &nbsp;•&nbsp; No Contracts &nbsp;•&nbsp; 30-Day Money Back Guarantee &nbsp;•&nbsp; ⚡ Built For UK Electricians &nbsp;•&nbsp; Stop Losing Jobs To Slow Replies &nbsp;•&nbsp; Automated Lead Follow-Up &nbsp;•&nbsp; SMS Automation &nbsp;•&nbsp; No Contracts &nbsp;•&nbsp; 30-Day Money Back Guarantee &nbsp;•&nbsp;</div>
 </div>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-layout">
     <div class="hero-text">
       <div class="eyebrow">⚡ For UK Electricians Only</div>
       <h1>Stop Losing<br><span class="accent">Electrical Jobs</span><br><span class="outline">To Competitors</span></h1>
-      <p class="hero-sub">While you're on a job, <strong>your phone rings and nobody answers</strong>. That customer doesn't wait — they call the next electrician on Google. Smith Lead Systems replies <strong>instantly and automatically</strong>, booking them in before you've put your screwdriver down.</p>
+      <p class="hero-sub">While you're on a job, <strong>your phone rings and nobody answers</strong>. That customer doesn't wait — they call the next electrician on Google. Smith Lead Systems replies <strong>instantly and automatically</strong>, catching the lead before you've even put your screwdriver down.</p>
       <div class="hero-actions">
         <a href="https://links.smithleadsystems.co.uk/widget/form/z9EoCRHUQokKGmByQKvI" target="_blank" class="btn-primary">Book Free 20-Min Demo ⚡</a>
         <a href="https://links.smithleadsystems.co.uk/widget/form/z9EoCRHUQokKGmByQKvI" target="_blank" class="btn-ghost">See How It Works</a>
@@ -420,7 +449,7 @@
         <div class="trust-item"><div class="trust-icon">⚡</div> Live within 48 hours</div>
       </div>
     </div>
-
+ 
     <!-- ANIMATED PHONE MOCKUP -->
     <div class="phone-wrap">
       <div class="phone-shell">
@@ -428,28 +457,28 @@
         <div class="phone-screen">
           <div class="wa-bar">
             <div class="wa-av">SLS</div>
-            <div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">online</div></div>
+            <div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">Text Message</div></div>
           </div>
           <div class="wa-msgs">
             <div class="missed-tag m1">📵 Missed call from you</div>
-            <div class="wa-bubble out m2">Hi! Missed your call — we're on a job 👋<br><strong>Can we help? Reply below ⬇</strong><div class="wa-t">09:14 <span class="tick">✓✓</span></div></div>
+            <div class="wa-bubble out m2">Hi! Sorry we missed your call, we are currently on a job. Got an enquiry? Use the link below and we will get back to you ASAP 👇<br><a href="#" class="sms-link">smithleadsystems.co.uk/enquiry</a><div class="wa-t">09:14</div></div>
             <div class="wa-bubble in m3">Need a consumer unit upgrade please<div class="wa-t">09:15</div></div>
-            <div class="wa-bubble out m4">We can get you in this week! 🔧<br><strong>👉</strong> smithleadsystems.co.uk/book<div class="wa-t">09:15 <span class="tick">✓✓</span></div></div>
-            <div class="wa-bubble in m5">Booked for Thursday 👍<div class="wa-t">09:16</div></div>
+            <div class="wa-bubble out m4">Perfect — I'll get you booked in this week 🔧 What day suits you?<div class="wa-t">09:15</div></div>
+            <div class="wa-bubble in m5">Thursday afternoon would be great 👍<div class="wa-t">09:16</div></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+ 
 <!-- PAIN -->
 <section class="section alt">
   <div class="section-inner">
     <p class="sec-label reveal">The Problem</p>
     <h2 class="reveal">Every Missed Call Is A <span class="accent">Job Gone</span></h2>
     <p class="sec-sub reveal">UK electricians lose thousands every month — not because they're bad at the trade, but because enquiries fall through the cracks.</p>
-
+ 
     <!-- ELECTRICIAN PHOTOS -->
     <div class="photo-strip reveal">
       <div class="photo-card photo-placeholder">
@@ -465,7 +494,7 @@
         <div class="photo-overlay"><div class="photo-label">£1,200 job</div><div class="photo-sub">Lost to a competitor who replied first</div></div>
       </div>
     </div>
-
+ 
     <div class="pain-grid" style="margin-top:1.5px">
       <div class="pain-card reveal"><span class="pain-icon">📵</span><h3>Missed Calls</h3><p>You're rewiring a consumer unit. Your phone rings. You can't answer. The customer tries the next electrician on Google — and they pick up.</p><div class="pain-loss">≈ £500–£2,500 lost per missed job</div></div>
       <div class="pain-card reveal"><span class="pain-icon">⏳</span><h3>Slow Replies</h3><p>Someone fills in your website form at 7pm. You see it at 9am the next day. By then, they've already booked someone else.</p><div class="pain-loss">78% of jobs go to whoever replies first</div></div>
@@ -474,9 +503,9 @@
     </div>
   </div>
 </section>
-
+ 
 <hr class="div">
-
+ 
 <!-- HOW IT WORKS -->
 <section class="section" id="how">
   <div class="section-inner">
@@ -484,23 +513,22 @@
     <h2 class="reveal">Your Business <span class="accent">On Autopilot</span></h2>
     <p class="sec-sub reveal">A fully automated system built for your electrical business. Once live, it works 24/7 — you just do the jobs.</p>
     <div class="steps">
-      <div class="step reveal"><div class="step-n">01</div><div class="step-in"><div class="step-icon">📲</div><h3>Customer Contacts You</h3><p>Call, website form, Facebook, Instagram, or WhatsApp — every enquiry channel covered, round the clock.</p></div></div>
-      <div class="step reveal"><div class="step-n">02</div><div class="step-in"><div class="step-icon">⚡</div><h3>System Replies Instantly</h3><p>An automated SMS or WhatsApp fires within seconds. You never miss an enquiry — even at midnight on a Sunday.</p></div></div>
-      <div class="step reveal"><div class="step-n">03</div><div class="step-in"><div class="step-icon">📅</div><h3>Customer Books Online</h3><p>They pick a time that works for them. Confirmation and reminders sent automatically — no back-and-forth calls.</p></div></div>
+      <div class="step reveal"><div class="step-n">01</div><div class="step-in"><div class="step-icon">📲</div><h3>Customer Contacts You</h3><p>Call, website form, Facebook, or Instagram — every enquiry channel covered, round the clock.</p></div></div>
+      <div class="step reveal"><div class="step-n">02</div><div class="step-in"><div class="step-icon">⚡</div><h3>System Replies Instantly</h3><p>An automated SMS fires within seconds. You never miss an enquiry — even at midnight on a Sunday.</p></div></div>
+      <div class="step reveal"><div class="step-n">03</div><div class="step-in"><div class="step-icon">📱</div><h3>Everything In One App</h3><p>Every call, text, and enquiry lands in the LeadConnector app on your phone. Reply to customers and book jobs straight into your diary — all from one place, wherever you are.</p></div></div>
       <div class="step reveal"><div class="step-n">04</div><div class="step-in"><div class="step-icon">⭐</div><h3>Review Request Sent</h3><p>After the job is done, the system asks for a Google review automatically. Your reputation builds without any effort.</p></div></div>
     </div>
   </div>
 </section>
-
+ 
 <!-- FEATURES -->
 <section class="section alt">
   <div class="section-inner">
     <p class="sec-label reveal">What's Included</p>
     <h2 class="reveal">Everything Your <span class="accent">Electrical Business</span> Needs</h2>
     <div class="feat-grid">
-      <div class="feat reveal"><div class="feat-icon">📵</div><div><h4>Missed Call Text Back</h4><p>Instant SMS or WhatsApp fires the moment you miss a call. Customers stay warm while you're on the tools.</p></div></div>
-      <div class="feat reveal"><div class="feat-icon">💬</div><div><h4>WhatsApp Automation</h4><p>Most UK customers prefer WhatsApp. Your system handles conversations, qualifies leads, and books jobs automatically.</p></div></div>
-      <div class="feat reveal"><div class="feat-icon">📅</div><div><h4>Online Booking System</h4><p>Customers book themselves in 24/7. No phone tag, no missed appointments — just confirmed jobs in your diary.</p></div></div>
+      <div class="feat reveal"><div class="feat-icon">📵</div><div><h4>Missed Call Text Back</h4><p>Instant SMS fires the moment you miss a call. Customers stay warm while you're on the tools.</p></div></div>
+      <div class="feat reveal"><div class="feat-icon">📅</div><div><h4>Book Jobs In Seconds</h4><p>Enquiries land in the LeadConnector app — you book customers straight into your diary in a couple of taps. Confirmations and reminders sent automatically.</p></div></div>
       <div class="feat reveal"><div class="feat-icon">⏰</div><div><h4>Appointment Reminders</h4><p>Automated reminders before every job. Fewer no-shows and less time wasted driving to empty properties.</p></div></div>
       <div class="feat reveal"><div class="feat-icon">⭐</div><div><h4>Google Review Requests</h4><p>After every job, the system requests a review automatically. Build your Google rating on complete autopilot.</p></div></div>
       <div class="feat reveal"><div class="feat-icon">🔁</div><div><h4>Customer Reactivation</h4><p>Re-engage past customers automatically with SMS campaigns for EICR reminders, inspections, and repeat work.</p></div></div>
@@ -509,45 +537,45 @@
     </div>
   </div>
 </section>
-
+ 
   </div>
 </section>
-
+ 
 <!-- SEE IT IN ACTION -->
 <section class="section">
   <div class="section-inner">
     <p class="sec-label reveal">See It In Action</p>
     <h2 class="reveal">Real Messages. <span class="accent">Real Results.</span></h2>
     <p class="sec-sub reveal">Here's exactly what your customers receive — automatically, while you're on the tools.</p>
-
+ 
     <div class="mockup-grid">
-
+ 
       <!-- MISSED CALL TEXT BACK -->
       <div class="mockup-card reveal">
         <div class="mockup-label">📵 Missed Call Text Back</div>
         <div class="phone-shell" style="width:100%;max-width:220px">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="wa-bar"><div class="wa-av">SLS</div><div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">online</div></div></div>
+            <div class="wa-bar"><div class="wa-av">SLS</div><div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">Text Message</div></div></div>
             <div class="wa-msgs p1-msgs">
               <div class="missed-tag p1a">📵 Missed call from you</div>
               <div class="wa-bubble out p1b">Hi! You called — sorry we missed you, on a job 👋 Can we help?<div class="wa-t">09:14 <span class="tick">✓✓</span></div></div>
               <div class="wa-bubble in p1c">Need a full rewire quote please<div class="wa-t">09:15</div></div>
-              <div class="wa-bubble out p1d">Perfect! Book your free survey here 👉 smithleadsystems.co.uk/book<div class="wa-t">09:15 <span class="tick">✓✓</span></div></div>
-              <div class="wa-bubble in p1e">Amazing, booked for Friday 👍<div class="wa-t">09:16</div></div>
+              <div class="wa-bubble out p1d">Perfect — I'll book you in for a free survey 👍 What day suits you?<div class="wa-t">09:15</div></div>
+              <div class="wa-bubble in p1e">Friday morning if possible, thanks!<div class="wa-t">09:16</div></div>
             </div>
           </div>
         </div>
         <div class="mockup-caption">Fires within seconds of a missed call — 24/7</div>
       </div>
-
+ 
       <!-- GOOGLE REVIEW REQUEST -->
       <div class="mockup-card reveal">
         <div class="mockup-label">⭐ Google Review Request</div>
         <div class="phone-shell" style="width:100%;max-width:220px">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="wa-bar"><div class="wa-av">SLS</div><div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">online</div></div></div>
+            <div class="wa-bar"><div class="wa-av">SLS</div><div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">Text Message</div></div></div>
             <div class="wa-msgs p2-msgs">
               <div class="wa-bubble out p2a">Hi Dave! Thanks for your consumer unit upgrade today 🙏 Got 2 mins for a Google review? It helps us massively ⭐ g.page/smithleadsystems/review<div class="wa-t">17:32 <span class="tick">✓✓</span></div></div>
               <div class="wa-bubble in p2b">Done! Left you 5 stars, brilliant service 👍<div class="wa-t">17:45</div></div>
@@ -557,14 +585,14 @@
         </div>
         <div class="mockup-caption">Sent automatically after every completed job</div>
       </div>
-
+ 
       <!-- APPOINTMENT REMINDER -->
       <div class="mockup-card reveal">
         <div class="mockup-label">⏰ Appointment Reminder</div>
         <div class="phone-shell" style="width:100%;max-width:220px">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="wa-bar"><div class="wa-av">SLS</div><div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">online</div></div></div>
+            <div class="wa-bar"><div class="wa-av">SLS</div><div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">Text Message</div></div></div>
             <div class="wa-msgs p3-msgs">
               <div class="wa-bubble out p3a">Hi Sarah! Reminder: your electrical survey is <strong>tomorrow Thu 22nd at 10am</strong> ⚡ Reply YES to confirm or call to rearrange.<div class="wa-t">17:00 <span class="tick">✓✓</span></div></div>
               <div class="wa-bubble in p3b">YES confirmed, see you then 👍<div class="wa-t">17:04</div></div>
@@ -574,28 +602,28 @@
         </div>
         <div class="mockup-caption">Sent 24hrs before — cuts no-shows dramatically</div>
       </div>
-
+ 
       <!-- CUSTOMER REACTIVATION -->
       <div class="mockup-card reveal">
         <div class="mockup-label">🔁 Customer Reactivation</div>
         <div class="phone-shell" style="width:100%;max-width:220px">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="wa-bar"><div class="wa-av">SLS</div><div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">online</div></div></div>
+            <div class="wa-bar"><div class="wa-av">SLS</div><div><div class="wa-info-name">Smith Lead Systems</div><div class="wa-info-status">Text Message</div></div></div>
             <div class="wa-msgs p4-msgs">
-              <div class="wa-bubble out p4a">Hi Mike! Your EICR certificate is due for renewal 👋 We can sort this quickly — 📅 smithleadsystems.co.uk/book<div class="wa-t">10:00 <span class="tick">✓✓</span></div></div>
-              <div class="wa-bubble in p4b">Oh yes forgot about that! Booked for next week 👍<div class="wa-t">10:08</div></div>
-              <div class="wa-bubble out p4c">Perfect Mike, see you then! ⚡<div class="wa-t">10:08 <span class="tick">✓✓</span></div></div>
+              <div class="wa-bubble out p4a">Hi Mike! Your EICR certificate is due for renewal 👋 Want me to get you booked in?<div class="wa-t">10:00</div></div>
+              <div class="wa-bubble in p4b">Oh yes, forgot about that — yes please!<div class="wa-t">10:08</div></div>
+              <div class="wa-bubble out p4c">Perfect Mike, I'll get you booked in for next week ⚡<div class="wa-t">10:08 <span class="tick">✓✓</span></div></div>
             </div>
           </div>
         </div>
         <div class="mockup-caption">Turns past customers into repeat revenue automatically</div>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- OUTCOMES -->
 <section class="section">
   <div class="section-inner">
@@ -651,7 +679,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- FREE PDF LEAD MAGNET -->
 <section class="pdf-strip reveal">
   <div class="section-inner">
@@ -668,69 +696,97 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- STATS -->
 <div class="stats-bar reveal">
   <div class="stats-inner">
     <div><div class="stat-n">48hrs</div><div class="stat-l">Average Setup Time</div></div>
     <div><div class="stat-n">24/7</div><div class="stat-l">Automated Response</div></div>
     <div><div class="stat-n">£0</div><div class="stat-l">Risk — 30-Day Guarantee</div></div>
-    <div><div class="stat-n">£197</div><div class="stat-l">Starting Per Month</div></div>
+    <div><div class="stat-n">£125</div><div class="stat-l">One Simple Price</div></div>
   </div>
 </div>
-
+ 
 <!-- TESTIMONIALS -->
 <section class="section">
   <div class="section-inner">
     <p class="sec-label reveal">What Electricians Say</p>
     <h2 class="reveal">Real Results From <span class="accent">UK Electricians</span></h2>
-
+ 
     <div class="testi-grid">
-      <div class="testi reveal"><div class="stars">★★★★★</div><p>I was losing at least 3–4 enquiries a week from missed calls. Within the first month the system had paid for itself twice over. The WhatsApp automation alone is worth every penny.</p><div class="testi-auth"><div class="av">JM</div><div><div class="au-name">James M.</div><div class="au-loc">Electrician · Manchester</div></div></div></div>
+      <div class="testi reveal"><div class="stars">★★★★★</div><p>I was losing at least 3–4 enquiries a week from missed calls. Within the first month the system had paid for itself twice over. The instant text-back alone is worth every penny.</p><div class="testi-auth"><div class="av">JM</div><div><div class="au-name">James M.</div><div class="au-loc">Electrician · Manchester</div></div></div></div>
       <div class="testi reveal"><div class="stars">★★★★★</div><p>Set up in less than 48 hours and I didn't touch a single technical thing — Kevin sorted everything. My Google reviews went from 6 to 31 in two months. Customers mention them constantly.</p><div class="testi-auth"><div class="av">DT</div><div><div class="au-name">Dave T.</div><div class="au-loc">Sole Trader · Birmingham</div></div></div></div>
       <div class="testi reveal"><div class="stars">★★★★★</div><p>The customer reactivation campaign brought back 8 previous customers in the first run. Jobs I'd have never remembered to chase. Brilliant bit of kit, highly recommend.</p><div class="testi-auth"><div class="av">SR</div><div><div class="au-name">Steve R.</div><div class="au-loc">Electrical Contractor · Leeds</div></div></div></div>
     </div>
   </div>
 </section>
-
+ 
 <!-- PRICING -->
 <section class="section alt" id="pricing">
   <div class="section-inner" style="text-align:center">
     <p class="sec-label reveal">Pricing</p>
-    <h2 class="reveal">Less Than The Cost Of <span class="accent">One Missed Job</span></h2>
-    <p class="sec-sub reveal" style="margin:.8rem auto 0">No long contracts. No tech knowledge. Cancel anytime.</p>
+    <h2 class="reveal">One Simple Price. <span class="accent">Less Than One Missed Job.</span></h2>
+    <p class="sec-sub reveal" style="margin:.8rem auto 0">One package, everything you need. No tiers, no setup fees, no long contracts — cancel anytime.</p>
   </div>
-  <div class="price-grid">
-    <div class="plan reveal">
-      <div class="plan-tier">Starter</div>
-      <div class="plan-price"><sup>£</sup>197<sub>/mo</sub></div>
-      <div class="plan-desc">Perfect for sole trader electricians</div>
-      <ul class="plan-feats"><li>Missed call text back</li><li>WhatsApp automation</li><li>Online booking system</li><li>Appointment reminders</li><li>Google review requests</li><li>Lead dashboard</li></ul>
-      <a href="https://links.smithleadsystems.co.uk/payment-link/6a0a6b798b5b8ce07e5d1af3" target="_blank" class="btn-plan">Get Started</a>
+ 
+  <div class="price-single reveal">
+    <div class="plan hot">
+      <div class="plan-badge">Everything Included</div>
+      <div class="plan-tier">The Package · One Per Electrician</div>
+      <div class="plan-price"><sup>£</sup>125<sub>/mo</sub></div>
+      <div class="plan-desc">The complete lead system for busy electricians</div>
+      <ul class="plan-feats">
+        <li>Missed call text back</li>
+        <li>Booking enquiry link</li>
+        <li>Google review requests</li>
+        <li>Old customer reactivation</li>
+      </ul>
+      <a href="https://links.smithleadsystems.co.uk/widget/form/z9EoCRHUQokKGmByQKvI" target="_blank" class="btn-plan">Book a Free Demo</a>
     </div>
-    <div class="plan hot reveal">
-      <div class="plan-badge">Most Popular</div>
-      <div class="plan-tier">Growth</div>
-      <div class="plan-price"><sup>£</sup>297<sub>/mo</sub></div>
-      <div class="plan-desc">For electricians ready to scale</div>
-      <ul class="plan-feats"><li>Everything in Starter</li><li>Customer reactivation campaigns</li><li>Custom enquiry forms</li><li>Monthly performance report</li><li>Priority support</li><li>Quarterly strategy call</li></ul>
-      <a href="https://links.smithleadsystems.co.uk/payment-link/6a0a6ba38b5b8ce07e5d1af4" target="_blank" class="btn-plan">Get Started</a>
-    </div>
-    <div class="plan reveal">
-      <div class="plan-tier">Pro</div>
-      <div class="plan-price"><sup>£</sup>397<sub>/mo</sub></div>
-      <div class="plan-desc">Multi-van firms &amp; contractors</div>
-      <ul class="plan-feats"><li>Everything in Growth</li><li>Multiple locations / users</li><li>Custom SMS &amp; email sequences</li><li>Dedicated account manager</li><li>Monthly strategy call</li><li>First priority support</li></ul>
-      <a href="https://links.smithleadsystems.co.uk/payment-link/6a0a6bd61d5a394a682e5017" target="_blank" class="btn-plan">Get Started</a>
+  </div>
+ 
+  <div class="addons reveal">
+    <p class="multivan-note">Running more than one van? The system scales with your team — <b>multi-van pricing on request.</b></p>
+    <p class="addons-title">Optional add-ons</p>
+    <div class="addon-chips">
+      <span class="addon-chip"><b>+</b>Landing pages</span>
+      <span class="addon-chip"><b>+</b>Full website</span>
+      <span class="addon-chip"><b>+</b>WhatsApp automation</span>
+      <span class="addon-chip"><b>+</b>&amp; more</span>
     </div>
   </div>
 </section>
-
+ 
+<!-- GET STARTED -->
+<section class="section" id="get-started">
+  <div class="section-inner" style="text-align:center">
+    <p class="sec-label reveal">Get Started</p>
+    <h2 class="reveal">Like What You See? <span class="accent">Get Going Today.</span></h2>
+    <p class="sec-sub reveal" style="margin:.8rem auto 0">Two ways to start — book a quick demo if you'd like to see it first, or skip the call and get set up straight away.</p>
+    <div class="start-grid reveal">
+      <div class="start-card">
+        <div class="start-ic">📞</div>
+        <h3>Book A Free Demo</h3>
+        <p>Want to see it in action first? Jump on a quick 20-minute call and we'll show you exactly how it works for your business — no pressure.</p>
+        <a href="https://links.smithleadsystems.co.uk/widget/form/z9EoCRHUQokKGmByQKvI" target="_blank" class="start-btn outline">Book A Demo</a>
+      </div>
+      <div class="start-card start-card-hot">
+        <div class="start-ic">⚡</div>
+        <h3>Get Started Now</h3>
+        <p>Seen enough? Pay up front and we'll have your system live within 48 hours — fully backed by the 30-day money-back guarantee.</p>
+        <div class="start-price">£125<span>/month</span></div>
+        <a href="https://links.smithleadsystems.co.uk/widget/form/gLvLCnfVDYYoxS2uxvZg" target="_blank" class="start-btn solid">Get Started</a>
+      </div>
+    </div>
+    <p class="start-note reveal">Secure monthly payment · Cancel anytime · Live within 48 hours</p>
+  </div>
+</section>
+ 
 <!-- GUARANTEE -->
 <section class="section reveal">
   <div class="section-inner"><div class="g-box"><span class="gi">🛡</span><h3>30-Day Money Back Guarantee</h3><p>If you don't get more leads within 30 days of going live, we'll refund you in full. No awkward conversations. No questions asked. You have absolutely nothing to lose.</p></div></div>
 </section>
-
+ 
 <!-- FAQ -->
 <section class="section alt">
   <div class="section-inner">
@@ -739,14 +795,14 @@
     <div class="faq-list reveal">
       <div class="faq-item"><button class="faq-q">How long does setup take? <span class="faq-tog">+</span></button><div class="faq-a">Most electricians are fully live within 48 hours. We handle all the technical setup — you just answer a few questions about your business.</div></div>
       <div class="faq-item"><button class="faq-q">Do I need to change my phone number? <span class="faq-tog">+</span></button><div class="faq-a">No. We set up a dedicated number that integrates with your existing setup. Everything works alongside what you already have.</div></div>
-      <div class="faq-item"><button class="faq-q">Do my customers need to download an app? <span class="faq-tog">+</span></button><div class="faq-a">No. Everything works through normal SMS, WhatsApp, and standard web pages. Nothing unusual for your customers — it just looks very professional.</div></div>
+      <div class="faq-item"><button class="faq-q">Do my customers need to download an app? <span class="faq-tog">+</span></button><div class="faq-a">No. Everything works through normal SMS and standard web pages. Nothing unusual for your customers — it just looks very professional.</div></div>
       <div class="faq-item"><button class="faq-q">I'm not techy — will I be able to use this? <span class="faq-tog">+</span></button><div class="faq-a">Absolutely. Once set up, it runs automatically. You don't need to touch any settings. We handle everything and you can reach us anytime.</div></div>
       <div class="faq-item"><button class="faq-q">Is there a contract? <span class="faq-tog">+</span></button><div class="faq-a">No long-term contracts. Pay monthly, cancel anytime. We're confident it'll pay for itself — so we don't need to lock you in.</div></div>
       <div class="faq-item"><button class="faq-q">What if it doesn't work for my business? <span class="faq-tog">+</span></button><div class="faq-a">That's what the 30-day money back guarantee is for. If you don't get more leads within 30 days of going live, we refund you in full — no questions asked.</div></div>
     </div>
   </div>
 </section>
-
+ 
 <!-- FINAL CTA -->
 <section class="cta-sec" id="cta">
   <div class="cta-sec-in">
@@ -757,7 +813,7 @@
     <p class="cta-note reveal">Takes 2 minutes to book &nbsp;•&nbsp; Live within 48 hours &nbsp;•&nbsp; 30-day money back guarantee</p>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="fl">Smith <span>Lead</span> Systems</div>
@@ -768,7 +824,7 @@
     <a href="https://smithleadsystems.github.io/Electrician-landing-page/cookie-policy.html" target="_blank">Cookies</a>
   </div>
 </footer>
-
+ 
 <script>
   document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -778,7 +834,7 @@
       if (!open) item.classList.add('open');
     });
   });
-
+ 
   // Loop all phone animations
   function restartGroup(selectors) {
     selectors.forEach(cls => {
@@ -795,17 +851,17 @@
       });
     }, 150);
   }
-
+ 
   // Hero phone
   function restartPhoneAnim() { restartGroup(['.m1','.m2','.m3','.m4','.m5']); }
   setInterval(restartPhoneAnim, 14000);
-
+ 
   // Section phones
   setInterval(() => restartGroup(['.p1a','.p1b','.p1c','.p1d','.p1e']), 10000);
   setInterval(() => restartGroup(['.p2a','.p2b','.p2c']), 8000);
   setInterval(() => restartGroup(['.p3a','.p3b','.p3c']), 8000);
   setInterval(() => restartGroup(['.p4a','.p4b','.p4c']), 8000);
-
+ 
   const obs = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {
@@ -814,8 +870,9 @@
       }
     });
   }, { threshold: 0.1 });
-
+ 
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 </script>
 </body>
 </html>
+ 
